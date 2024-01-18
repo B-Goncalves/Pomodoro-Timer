@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomodoro</title>
 </head>
+
 <body>
     <main>
-        <div>
+        <div class="main">
             <h1>Pomodoro Timer</h1>
-            <button class="btn" id="btnStart">Start</button>
-            <button class="btn" id="btnPause">Pause</button>
-            <button class="btn" id="btnReset">Reset</button>
+            <div class="buttonsControll">
+                <button class="btn" id="btnStart">Start</button>
+                <button class="btn" id="btnPause">Pause</button>
+                <button class="btn" id="btnReset">Reset</button>
+            </div>
+            <div class="timer">
+                25:00:00
+            </div>
+            <div class="btnSesionBreak">
+                <button class="btnLength" id="btnSession">Set Session Lenght</button>
+                <button class="btnLength" id="btnBreak">Set Session Lenght</button>
+            </div>
+            <p>You will be notified when the session or break ends.</p>
+            <p>Completed Pomodoros:</p>
         </div>
-        
+
+
     </main>
-    
+    <script src="index.js"></script>
 </body>
+
 </html>
