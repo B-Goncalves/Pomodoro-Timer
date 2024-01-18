@@ -12,19 +12,19 @@
     <div class="main">
         <h1>Pomodoro Timer</h1>
         <div class="buttonsControll">
-            <button class="btn" id="btnStart">Start</button>
-            <button class="btn" id="btnPause">Pause</button>
-            <button class="btn" id="btnReset">Reset</button>
+            <button onclick="btnStart()" id="btnStart">Start</button>
+            <button onclick="btnPause()" id="btnPause">Pause</button>
+            <button onclick="btnReset()" id="btnReset">Reset</button>
         </div>
         <div class="timer">
-            25:00:00
+            <span id="minutes">00</span>:<span id="seconds">00</span>
         </div>
         <div class="btnSesionBreak">
-            <button class="btn" id="btnSession">Set Session Lenght</button>
-            <button class="btn" id="btnBreak">Set Session Lenght</button>
+            <button onclick="btnSession()" id="btnSession">Set Session Lenght</button>
+            <button onclick="btnBreak()" id="btnBreak">Set Session Lenght</button>
         </div>
         <p>You will be notified when the session or break ends.</p>
-        <p class="pomodoroCount">Completed Pomodoros:</p>
+        <p class="pomodoroCount" id="pomodoroCount">Completed Pomodoros:</p>
     </div>
 
 
