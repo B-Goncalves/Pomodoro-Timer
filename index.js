@@ -40,6 +40,8 @@ document.getElementById("submitModal").addEventListener("click", function () {
     document.getElementById("myModal").style.display = "none";
     minutes = minuteSession;
     seconds = secodsSession;
+    auxMinutes = minutes; 
+    auxSeconds = seconds
     displayRefresh();
   } else {
     alert("Please enter valid values for minutes and seconds.");
