@@ -20,11 +20,23 @@
             <span id="minutes">00</span>:<span id="seconds">00</span>
         </div>
         <div class="btnSesionBreak">
-            <button onclick="btnSession()" id="btnSession">Set Session Lenght</button>
-            <button onclick="btnBreak()" id="btnBreak">Set Session Lenght</button>
+            <button id="btnSession">Set Session Lenght</button>
+            <button id="btnBreak">Set Break Lenght</button>
         </div>
         <p>You will be notified when the session or break ends.</p>
-        <p class="pomodoroCount" id="pomodoroCount">Completed Pomodoros:</p>
+        <p class="pomodoroCount" id="pomodoroCount">Completed Pomodoros: 0</p>
+
+        <div id="myModal" class="modal">
+            <div class="modalContent">
+                <span class="close">&times;</span>
+                <label for="minuteSession">Minutes:</label>
+                <input type="text" id="minuteSession">
+                <label for="secodsSession">Seconds:</label>
+                <input type="text" id="secodsSession">
+
+                <button id="submitModal">Ok</button>
+            </div>
+        </div>
     </div>
 
 
