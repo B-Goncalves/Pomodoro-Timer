@@ -55,6 +55,7 @@ function btnStart() {
     if (minutes === 0 && seconds === 0) {
       pomodoroCount++;
       clearInterval(pomodoro);
+      reset();
     } else if (seconds === 0) {
       seconds = 59;
       minutes--;
@@ -63,6 +64,7 @@ function btnStart() {
     }
     displayRefresh();
   }, 1000);
+
 }
 
 function btnPause() {
