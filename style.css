@@ -68,11 +68,11 @@ p.pomodoroCount {
   margin-top: 1%; 
   top: 0;
   padding-top: 4%; 
-  width: 80%; 
+  width: 100%; 
   max-width: 500px; 
   height: 300px; 
   background-color: rgba(0, 0, 0, 0.8);
-  
+
 }
 
 .modal-content {
@@ -81,6 +81,11 @@ p.pomodoroCount {
   padding: 20px;
   border: 1px solid #3164DB;
   width: 90%; 
+  
+  align-items: center;
+  text-align: center;
+  justify-content:center;
+  
 }
 
 .close {
