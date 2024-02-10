@@ -40,8 +40,8 @@ document.getElementById("submitModal").addEventListener("click", function () {
     document.getElementById("myModal").style.display = "none";
     minutes = minuteSession;
     seconds = secodsSession;
-    auxMinutes = minutes; 
-    auxSeconds = seconds
+    auxMinutes = minutes;
+    auxSeconds = seconds;
     displayRefresh();
   } else {
     alert("Please enter valid values for minutes and seconds.");
@@ -64,22 +64,21 @@ function btnStart() {
     }
     displayRefresh();
   }, 1000);
-
 }
 
 function btnPause() {
   clearInterval(pomodoro);
 }
 
-function btnReset(){
-    reset();
+function btnReset() {
+  reset();
 }
 
-function reset(){
-    clearInterval(pomodoro);
-    minutes = auxMinutes;
-    seconds = auxSeconds;
-    displayRefresh();
+function reset() {
+  clearInterval(pomodoro);
+  minutes = auxMinutes;
+  seconds = auxSeconds;
+  displayRefresh();
 }
 
 function displayRefresh() {
