@@ -1,7 +1,7 @@
 body {
   background-color: #0c111c;
   font-family: monospace;
-  color: #ebeef4;
+  color: #cfd4dd;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,9 +21,7 @@ h1 {
   font-size: 2.5rem;
 }
 
-#btnStart,
-#btnReset,
-#btnPause {
+#btnStart,#btnReset,#btnPause {
   color: black;
   font-size: 1.125rem;
   margin: 0 10px 20px;
@@ -43,8 +41,7 @@ button:hover {
   margin-bottom: 20px;
 }
 
-#btnSession,
-#btnBreak {
+#btnSession, #btnBreak {
   color: black;
   font-size: 1.125rem;
   margin: 0 10px 20px;
@@ -99,14 +96,12 @@ p.pomodoroCount {
   margin-top: -10px;
 }
 
-.close:hover,
-.close:focus {
+.close:hover,.close:focus {
   color: #3164DB;
   cursor: pointer;
 }
 
-label,
-input {
+label,input {
   display: block;
   margin-bottom: 0px;
   margin-top: 15px;
@@ -146,11 +141,7 @@ input {
     width: 95%;
   }
 
-  #btnStart,
-  #btnReset,
-  #btnPause,
-  #btnSession,
-  #btnBreak {
+  #btnStart, #btnReset, #btnPause, #btnSession, #btnBreak {
     margin: 0 5px 10px;
     padding: 5px 8px;
     font-size: 1rem;
