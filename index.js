@@ -21,20 +21,13 @@ document.getElementById("btnBreak").addEventListener("click", function () {
 });
 
 document
-  .getElementsByClassName("close")[0]
-  .addEventListener("click", function () {
+  .getElementsByClassName("close")[0].addEventListener("click", function () {
     document.getElementById("myModal").style.display = "none";
   });
 
 document.getElementById("submitModal").addEventListener("click", function () {
-  let minuteSession = parseInt(
-    document.getElementById("minuteSession").value,
-    10
-  );
-  let secodsSession = parseInt(
-    document.getElementById("secodsSession").value,
-    10
-  );
+  let minuteSession = parseInt(document.getElementById("minuteSession").value,10);
+  let secodsSession = parseInt(document.getElementById("secodsSession").value,10);
 
   if (!isNaN(minuteSession) && !isNaN(secodsSession)) {
     document.getElementById("myModal").style.display = "none";
